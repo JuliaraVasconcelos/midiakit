@@ -3,15 +3,13 @@
     font-size: 36px;
     color: #ed145b
 }
-
-.boxGreen {
-    background-color: aquamarine;
-    width: 100px;
-    height: 100px;
-}
-
-.boxRed {
-    background-color: red;
-    width: 100px;
-    height: 100px;
+.Container{
+    background-color: #F6F0FF;
+    width: 90%;
+    max-width: 740px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    margin: 70px;
 }

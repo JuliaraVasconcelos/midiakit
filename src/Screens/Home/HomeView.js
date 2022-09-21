@@ -1,22 +1,22 @@
 
 import * as React from "react";
-import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-import ToggleButton from '@mui/material/ToggleButton';
-import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
-import TabContext from '@mui/lab/TabContext';
-import TabList from '@mui/lab/TabList';
-import TabPanel from '@mui/lab/TabPanel';
+import { Container, 
+    Tab, 
+    TabPanel, 
+    Tabs, 
+    Typography, 
+    Box,
+    Grid, 
+    styled, 
+    Paper } from "@mui/material";
 import PropTypes from 'prop-types';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
 import Youtube from "../../Components/InnerComponent/Youtube";
 import Twitch from "../../Components/InnerComponent/Twitch";
 import Instagram from "../../Components/InnerComponent/Instagram";
 import TikTok from "../../Components/InnerComponent/TikTok";
 import Parcerias from "../../Components/InnerComponent/Parcerias";
+import Profile from "../../Components/InnerComponent/Profile"
+import { MuiThemes } from "../../Utils/Commom/MuiThemes";
 
 export default function HomeView({ handleChange, value, a11yProps }) {
 
@@ -32,7 +32,7 @@ export default function HomeView({ handleChange, value, a11yProps }) {
                 {...other}
             >
                 {value === index && (
-                    <Box sx={{ p: 3 }}>
+                    <Box sm={{ p: 3 }}>
                         <Typography>{children}</Typography>
                     </Box>
                 )}
@@ -52,13 +52,32 @@ export default function HomeView({ handleChange, value, a11yProps }) {
             'aria-controls': `simple-tabpanel-${index}`,
         };
     }
+
     
     return (
-        
-        <div>
-            <Box sx={{ width: '100%' }}>
-                <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                    <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+        <>
+        <Container  sx={{
+            width: '70%',
+            maxWidth: '400px',
+            marginTop: '5rem',
+            padding: '2rem 2rem',
+            backgroundColor: '#DDDDF8',
+            borderRadius: 5           
+        }} >
+                <Profile/>
+            <Box sx={{ width: '100%', 
+                     }}>
+                <Box sx={{ borderBottom: 1, 
+                        borderColor: '#B3B3F0',
+                        alignItems: 'center',
+                        marginBottom: '0.5rem',
+                        
+                         }}>
+                        <Tabs value={value} onChange={handleChange} 
+                            variant="scrollable"
+                            scrollButtons
+                            allowScrollButtonsMobile
+                            aria-label="scrollable force tabs example">
                         <Tab label="Youtube" {...a11yProps(0)} />
                         <Tab label="Twitch" {...a11yProps(1)} />
                         <Tab label="TikTok" {...a11yProps(2)} />
@@ -82,6 +101,7 @@ export default function HomeView({ handleChange, value, a11yProps }) {
                     <Parcerias />
                 </TabPanel>
             </Box>
-        </div>
+            </Container>
+        </>
     );
 }

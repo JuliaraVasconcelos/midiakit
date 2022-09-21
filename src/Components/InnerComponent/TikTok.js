@@ -1,30 +1,47 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
 
-export default function Youtube() {
+const Item = styled(Paper)(({ theme }) => ({
+    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+    ...theme.typography.body2,
+    padding: theme.spacing(1),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+}));
+
+export default function AutoGrid() {
     return (
-        <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea>
-                <CardMedia
-                    component="img"
-                    height="140"
-                    image="/static/images/cards/contemplative-reptile.jpg"
-                    alt="green iguana"
-                />
-                <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                        Lizard
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                        species, ranging across all continents except Antarctica
-                    </Typography>
-                </CardContent>
-            </CardActionArea>
-        </Card>
+        <Box sx={{ flexGrow: 1 }}>
+            <Grid container spacing={3}>
+                <Grid item sm={6}>
+                    <Item sx={{
+                        minHeight: '150px'
+                    }}>
+                        <p>Vídeos focados no público que é atraído por cultura japonesa e pop, com vídeos de animes, curiosidades, mostrando produtos e dia a dia.</p></Item>
+                </Grid>
+                <Grid item xs>
+                    <Item sx={{
+                        minHeight: '150px'
+                    }}>
+                        <p>3.758
+                        Seguidores</p>
+                        <p>89,9k
+                        visualizações</p></Item>
+                </Grid>
+
+                <Grid item xs>
+                    <Item sx={{
+                        minHeight: '150px'
+                    }}>
+                        <p>22,9%
+                        feminino</p>
+                        <p>77,1%
+                        masculino</p></Item>
+                </Grid>
+            </Grid>
+        </Box>
     );
 }

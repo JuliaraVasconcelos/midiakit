@@ -6,6 +6,7 @@ import MuiThemes from './Utils/Commom/MuiThemes';
 import HomeController from './Screens/Home/HomeController';
 import { BrowserRouter } from "react-router-dom";
 import Routes from './Routes/RouteController';
+import { ThemeProvider } from '@mui/system';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
