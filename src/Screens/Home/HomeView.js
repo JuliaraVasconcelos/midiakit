@@ -2,13 +2,9 @@
 import * as React from "react";
 import { Container, 
     Tab, 
-    TabPanel, 
     Tabs, 
     Typography, 
-    Box,
-    Grid, 
-    styled, 
-    Paper } from "@mui/material";
+    Box } from "@mui/material";
 import PropTypes from 'prop-types';
 import Youtube from "../../Components/InnerComponent/Youtube";
 import Twitch from "../../Components/InnerComponent/Twitch";
@@ -16,7 +12,6 @@ import Instagram from "../../Components/InnerComponent/Instagram";
 import TikTok from "../../Components/InnerComponent/TikTok";
 import Parcerias from "../../Components/InnerComponent/Parcerias";
 import Profile from "../../Components/InnerComponent/Profile"
-import { MuiThemes } from "../../Utils/Commom/MuiThemes";
 
 export default function HomeView({ handleChange, value, a11yProps }) {
 

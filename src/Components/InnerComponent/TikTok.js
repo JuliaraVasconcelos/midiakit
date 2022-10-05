@@ -17,10 +17,7 @@ export default function AutoGrid() {
         <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={3}>
                 <Grid item sm={6}>
-                    <Item sx={{
-                        minHeight: '150px'
-                    }}>
-                        <p>Vídeos focados no público que é atraído por cultura japonesa e pop, com vídeos de animes, curiosidades, mostrando produtos e dia a dia.</p></Item>
+                        <p>Vídeos focados no público que é atraído por cultura japonesa e pop, com vídeos de animes, curiosidades, mostrando produtos e dia a dia.</p>
                 </Grid>
                 <Grid item xs>
                     <Item sx={{
