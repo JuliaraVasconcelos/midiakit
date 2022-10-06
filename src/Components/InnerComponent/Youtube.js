@@ -15,15 +15,17 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function AutoGrid() {
     return (
-        <Box sx={{ flexGrow: 1, }}>
+        <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={3}>
-                <Grid item sm={6}>
-                    <p>Canal voltado para o público interessado na cultura japonesa, contando com reviews de animes, teorias e curiosidades, além de reviews de produtos relacionados às marcas parceiras, que geram identificação com a audiência.</p>
+                <Grid item sm={6}
+                textAlign="center">
+                    Canal voltado para o público interessado na cultura japonesa, contando com reviews de animes, teorias e curiosidades, além de reviews de produtos relacionados às marcas parceiras, que geram identificação com a audiência.
                 </Grid>
                 <Grid item xs>
                     <Item sx={{
                         minHeight: '150px'
-                    }}><p>+6.500
+                    }}>
+                        <p>+6.500
                         Inscritos</p>
                         <p>+7 mil
                             views/mês</p></Item>

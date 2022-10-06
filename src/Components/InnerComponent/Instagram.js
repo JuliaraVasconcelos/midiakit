@@ -16,7 +16,8 @@ export default function AutoGrid() {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={3}>
-                <Grid item sm={6}>
+                <Grid item sm={6}
+                    textAlign="center">
                         <p>Plataforma voltada para compartilhar o dia a dia, novidades e notícias relacionadas aos outros canais onde produzo conteúdo.</p>
                 </Grid>
                 <Grid item xs>

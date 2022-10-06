@@ -16,7 +16,8 @@ export default function AutoGrid() {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={3}>
-                <Grid item sm={6}>
+                <Grid item sm={6}
+                    textAlign="center">
                         <p>Lives focadas em bate papo e compartilhamento de ideias. O público também é interessado em assuntos da cultura japonesa e pop de uma maneira geral. A comunidade está em constante crescimento.</p>
                 </Grid>
                 <Grid item xs>

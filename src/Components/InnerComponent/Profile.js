@@ -6,6 +6,10 @@ import Grid from '@mui/material/Unstable_Grid2';
 import Perfil from '../../Images/perfil.png'
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
+import youtube from '../../Images/youtube.png';
+import twitch from '../../Images/twitch.png';
+import tiktok from '../../Images/tiktok.png';
+import instagram from '../../Images/instagram.png'
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -18,14 +22,18 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const Img = styled('img')({
     margin: 'auto',
-    display: 'flex',
+    padding:'10px',
+    // display: 'flex',
+    // flexDirection: 'row',
     maxWidth: '100%',
     maxHeight: '100%',
 });
 
 export default function BasicGrid() {
     return (
-        <Box sx={{ flexGrow: 2 }}>
+        <Box sx={{ flexGrow: 2,
+        alignItens:'center',
+        textAlign:'center' }}>
             <Grid container spacing={2} wrap='wrap'>
                 <Grid item>
                     <ButtonBase sx={{ width: 200 }}>
@@ -34,13 +42,27 @@ export default function BasicGrid() {
                 </Grid>
                 <Grid item xs={12} sm container>
                     <Grid item xs container spacing={2}>
-                        <Grid item xs>
-                            <Typography gutterBottom variant="subtitle1" component="div">
-                                <p>Sou a Juliara, tenho 30 anos e produzo conteúdo para a internet desde 2015. Atualmente no Youtube, Instagram, Tik Tok e Twitch, meus conteúdos são voltados para o mundo dos games e animes, abrangendo principalmente o público que consome conteúdos orientais.</p>
-                                <p>Influencer de marcas de tecnologia e lifestyle.</p>
+                        <Grid item xs={12}>
+                            <Typography gutterBottom variant="subtitle1" component="div" textAlign="center">
+                                <div>Juliara Vasconcelos</div>
+                                <div>Influencer de marcas de tecnologia e lifestyle.</div>
+                                <a href='https://www.youtube.com/channel/UC1wBUmaGagTLs0DYpI9Vg8g'><Img src={youtube} width='50px' /></a>
+                                <a href='http://twitch.tv/jujubazonac'><Img src={twitch} width='43px' /></a>
+                                <a href='https://www.tiktok.com/@jujubazonac'><Img src={tiktok} width='40px' /></a>
+                                <a href='https://www.instagram.com/jujubazonac/'><Img src={instagram} width='45px' /></a>
                             </Typography>
                         </Grid>
+                                
+                            
+                        </Grid>
                     </Grid>
+                </Grid>
+            <Grid item xs direction='column'>
+                <p>Sou a Juliara, tenho 30 anos e produzo conteúdo para a internet desde 2015. Atualmente no Youtube, Instagram, Tik Tok e Twitch, meus conteúdos são voltados para o mundo dos games e animes, abrangendo principalmente o público que consome conteúdos orientais.</p>
+
+                <Grid container spacing={2}>
+                    <Item> +20K seguidores no total</Item>
+                    <Item> +20K seguidores no total</Item>
                 </Grid>
             </Grid>
         </Box>

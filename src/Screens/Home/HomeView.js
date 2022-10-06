@@ -66,7 +66,6 @@ export default function HomeView({ handleChange, value, a11yProps }) {
                         borderColor: '#B3B3F0',
                         alignItems: 'center',
                         marginBottom: '0.5rem',
-                        
                          }}>
                         <Tabs value={value} onChange={handleChange} 
                             variant="scrollable"
