@@ -11,6 +11,16 @@ const Item = styled(Paper)(({ theme }) => ({
     textAlign: 'center',
     color: theme.palette.text.secondary,
 }));
+const H3 = styled('div')({
+    fontSize: '30px',
+    color: '4B06B6',
+    fontWeight: 'bold'
+});
+const Num = styled('div')({
+    padding: '2px',
+    color: '#4B06B6',
+    margin: '10px'
+})
 
 export default function BasicGrid() {
     return (

@@ -9,11 +9,11 @@ const MuiThemes = ({ children }) => {
             fontFamily: ["Poppins", "sans-serif"].join(","),
             h1: {
                 fontSize: Sizes.FontSizeLG,
-                color: Colors.NeutralDark,
+                color: Colors.PrimaryDark,
             },
             h2: {
                 fontSize: Sizes.FontSizeSM,
-                color: Colors.NeutralDark,
+                color: Colors.PrimaryDark,
                 fontWeight: "bold",
             },
             body1: {

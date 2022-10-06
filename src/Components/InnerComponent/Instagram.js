@@ -11,6 +11,16 @@ const Item = styled(Paper)(({ theme }) => ({
     textAlign: 'center',
     color: theme.palette.text.secondary,
 }));
+const Num = styled('div')({
+    padding: '2px',
+    color: '#4B06B6',
+    margin: '10px'
+})
+const Percent = styled('div')({
+    fontSize: '24px',
+    color: '4B06B6',
+    fontWeight: 'bold'
+});
 
 export default function AutoGrid() {
     return (
@@ -22,26 +32,30 @@ export default function AutoGrid() {
                 </Grid>
                 <Grid item xs>
                     <Item sx={{
-                        minHeight: '150px'
-                    }}>
-                        <p>1.600
-                        Seguidores</p>
-                        <p>19,9k
-                        alcance/mês</p></Item>
+                        minHeight: '240px'
+                    }}><Num>
+                        <div><Percent>1.940</Percent>
+                        Seguidores</div>
+                        <div><Percent>14.6k</Percent>
+                        alcance/mês</div>
+                        <div><Percent>56.542</Percent>
+                        impressões/mês</div>
+                        </Num></Item>
                 </Grid>
 
                 <Grid item xs>
                     <Item sx={{
                         minHeight: '150px'
-                    }}> 
-                        <p>39,2%
-                        feminino</p>
-                        <p>60,7%
-                        masculino</p>
-                        <p>26,8%
-                        18 a 24 anos</p>
-                        <p>47,9%
-                        25 a 34 anos</p></Item>
+                    }}> <Num>
+                        <div><Percent>27,1%</Percent>
+                        feminino</div>
+                        <div><Percent>72,8%</Percent>
+                        masculino</div>
+                        <div><Percent>36,6%</Percent>
+                        18 a 24 anos</div>
+                        <div><Percent>42,5%</Percent>                    
+                        25 a 34 anos</div>
+                        </Num></Item>
                 </Grid>
             </Grid>
         </Box>

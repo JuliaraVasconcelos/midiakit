@@ -52,7 +52,7 @@ export default function HomeView({ handleChange, value, a11yProps }) {
     return (
         <>
         <Container  sx={{
-            width: '70%',
+            width: '60%',
             maxWidth: '400px',
             marginTop: '5rem',
             padding: '2rem 2rem',
@@ -80,7 +80,7 @@ export default function HomeView({ handleChange, value, a11yProps }) {
                     </Tabs>
                 </Box>
                 <TabPanel value={value} index={0}>
-                    <Youtube />
+                        <Youtube />
                 </TabPanel>
                 <TabPanel value={value} index={1}>
                     <Twitch />

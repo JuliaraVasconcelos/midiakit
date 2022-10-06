@@ -11,6 +11,16 @@ const Item = styled(Paper)(({ theme }) => ({
     textAlign: 'center',
     color: theme.palette.text.secondary,
 }));
+const Num = styled('div')({
+    padding: '2px',
+    color: '#4B06B6',
+    margin: '10px'
+})
+const Percent = styled('div')({
+    fontSize: '24px',
+    color: '4B06B6',
+    fontWeight: 'bold'
+});
 
 export default function AutoGrid() {
     return (
@@ -23,21 +33,22 @@ export default function AutoGrid() {
                 <Grid item xs>
                     <Item sx={{
                         minHeight: '150px'
-                    }}>
-                        <p>3.758
-                        Seguidores</p>
-                        <p>89,9k
-                        visualizações</p></Item>
+                    }}><Num>
+                        <div><Percent>8.578</Percent>
+                        Seguidores</div>
+                        <div><Percent>+873k</Percent>
+                        visualizações</div>
+                        </Num></Item>
                 </Grid>
 
                 <Grid item xs>
                     <Item sx={{
                         minHeight: '150px'
-                    }}>
-                        <p>22,9%
-                        feminino</p>
-                        <p>77,1%
-                        masculino</p></Item>
+                    }}><Num>
+                        <div><Percent>19,7%</Percent>
+                        feminino</div>
+                        <div><Percent>80,3%</Percent>
+                        masculino</div></Num></Item>
                 </Grid>
             </Grid>
         </Box>
