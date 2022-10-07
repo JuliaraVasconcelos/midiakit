@@ -27,16 +27,18 @@ const Percent = styled('div')({
 export default function AutoGrid() {
     return (
         <Box sx={{ flexGrow: 1,
-                minHeight: 350 }}>
+                minHeight: 350,
+                 }}>
             <Grid container spacing={3}>
                 <Grid item sm={6}
                 textAlign="center"
-                justifyContent={'center'}>
+                alignSelf={'center'}>
                     Canal voltado para o público interessado na cultura japonesa, contando com reviews de animes, teorias e curiosidades, além de reviews de produtos relacionados às marcas parceiras, que geram identificação com a audiência.
                 </Grid>
-                <Grid item xs alignContent={'center'}>
+                <Grid item xs alignSelf={'center'}>
                     <Item sx={{
-                        minHeight: '240px'                      
+                        minHeight: '240px',
+                        alignSelf: 'center'                      
                     }}><Num>
                         <div><Percent>+7.2k</Percent>
                         Inscritos</div>
@@ -60,14 +62,14 @@ export default function AutoGrid() {
                     </Item>
                 </Grid>
             </Grid>
-            <Grid sx={{
+            {/* <Grid sx={{
                 marginTop: '10px',
             }}>
                 <img src={videosyt} alt='vídeos mais vistos no canal'
                     width={'100%'}
                     padding={'20px'}
                 />
-            </Grid>
+            </Grid> */}
         </Box>
     );
 }

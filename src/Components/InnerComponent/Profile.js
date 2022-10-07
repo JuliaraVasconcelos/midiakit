@@ -57,7 +57,7 @@ export default function BasicGrid() {
             <Grid>
                 <p>Sou a Juliara, tenho 30 anos e produzo conteúdo para a internet desde 2015. Atualmente no Youtube, Instagram, Tik Tok e Twitch, meus conteúdos são voltados para o mundo dos games e animes, abrangendo principalmente o público que consome conteúdos orientais.</p>
 
-                <Grid container sm={12} spacing={1} alignItems={'center'}>
+                <Grid container sm={12} spacing={1} margin={'auto'}>
                     <Num><H3>+20K</H3> seguidores no total</Num>
                     <Num><H3>+880K </H3>visualizações no total</Num>
                 </Grid>

@@ -27,13 +27,14 @@ export default function AutoGrid() {
         <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={3}>
                 <Grid item sm={6}
-                    textAlign="center">
+                    textAlign="center"
+                    alignSelf={'center'}>
                         <p>Plataforma voltada para compartilhar o dia a dia, novidades e notícias relacionadas aos outros canais onde produzo conteúdo.</p>
                 </Grid>
-                <Grid item xs>
+                <Grid item xs alignSelf={'center'}>
                     <Item sx={{
                         minHeight: '240px'
-                    }}><Num>
+                    }}><Num alignSelf={'center'}>
                         <div><Percent>1.940</Percent>
                         Seguidores</div>
                         <div><Percent>14.6k</Percent>
